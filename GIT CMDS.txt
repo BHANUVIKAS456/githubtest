@@ -1,0 +1,125 @@
+# sudo su -
+ 
+	by default git will be available,check for the version
+# git --version
+
+	if git is not available
+# sudo apt install git(ubuntu) or 
+# yum install git(redhat) 
+
+
+	configuration : setting up the GIT (informing the local rep' that it is my remote acount 
+				     	and whatever the work i do, udate it in remote rep')
+	Setting up the GIT Hub : by giving our usre name and domain name.
+
+# git config --global user.name "bhanuvikas456"
+# git config --global user.mail "sbhanuvikas456@gmail.com"
+
+	whenever you try to add to the origin or push into the remote rep': it asks for PASSWORD for authentication
+
+# mkdir bhanu
+# cd bhanu
+
+1.
+# vi README.md
+
+	README.md : it is the file which will add the content which we give
+
+	i = insert
+	"give the information regarding the particular rp' whatever we want to give"
+
+#esc :wq!
+
+2.
+# echo "# data" >>README.md 
+
+	# data : "give the information regarding the particular rp' whatever we want to give"
+
+THIS DATA WILL BE USEFUL FOR IDENTIFICATION OF WHY THIS REP' IS USED FOR
+
+# git init
+
+	git inti : will create a new rep'
+
+# git add README.md
+
+# touch 123
+# touch 456		(lets create some sample files for our usage)
+# git add *		(by add * cmd we add this cretaed files to staging area)
+# touch 789
+# git add 789		(to add a single file)
+
+	git add : will add the files to the staging area
+
+# ls
+	we can check the files in staging area
+
+
+# git commit -m "commit info"		(commit info : by adding all these files we give commit id for the identification)
+
+	git commit : adding files from staging area to local rep' 
+
+
+# git branch 		(*master : by default)
+# git checkout -b bhanu (by this cmd will create a new branch)
+# git checkout vikas 	(switch between the branchs)
+
+# git branch -M main 	(to change the name of default name master to main)
+
+
+# git remote add origin https://github.com/bhanuvikas456/batch.git  	
+			*** (first time whenever we try to create a new rep' from local
+			and trying to add that particular url )
+			(we can get this URL in the new rep' portal in the git)
+
+
+# git push -u origin master 		(if we change master to main : then use main)
+# bhanuvikas456				(askes for user info : give user name)
+# pa****rd 				(a/c password)
+
+WHATEVER THE OBJECTS OR DATA AVAILABLE IN THE LOCAL REP' WILL BE PICKED UP & MOVED TO BRANCH IN WHICH ALL ARE COMMITED'
+
+
+# git log 	(will give information about our environment)
+
+# git --help 	(instructions)  https://git-scm.com
+
+
+# git reset 'filename' 	(file will available but the data cannot be useful and cannot be commited)
+# gitrm 		(to remove any file )
+
+
+# git commit -m "commit second" 	(will be updated but only the difference file will be updated)
+
+
+# git show 'commit name'	(this cmd shows the meta data and content changes of the specified commit)
+
+
+# git commit -a 	(this cmdcommits any files that you have added with the git add cmd and also commits any files 
+			you have changed since then)
+
+# git diff 		(this cmd shows the file differences which are not yet staged)
+# git diff -staged	(this cmd shoes the diff between the files in the staging area and the latest version present)
+# git diff [first branch] [second branch] 	(files diff between 2 branches)
+
+
+
+# git pull 		(it will try to get the diff and at the same time updates the local rep')
+# git fetch		(it will fetch the informaation of what are diff in commits b/w local and remote rep')
+# git status 		(it will show any untracked files that didnot get commited)
+# git log 		(recent commits that are there in the env, all changs and id etc )
+
+
+
+
+
+token
+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
+
+
+
+
+
+
+
+
