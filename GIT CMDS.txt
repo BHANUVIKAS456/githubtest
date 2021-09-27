@@ -117,6 +117,14 @@ token
 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
 
 
+git log
+git status
+git checkout
+git branch
+git commit -m "--------"
+git 
+
+
 
 
 
